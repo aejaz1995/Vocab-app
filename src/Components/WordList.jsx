@@ -1,5 +1,5 @@
 import React from 'react'
-import { Paper, List, ListItem, ListItemText, makeStyles, Fab } from "@material-ui/core";
+import { Paper, List, ListItem, ListItemText, makeStyles, Fab, Divider } from "@material-ui/core";
 import AddIcon from "@material-ui/icons/Add"
 
 const useStyles = makeStyles((theme) =>({
@@ -25,6 +25,11 @@ const useStyles = makeStyles((theme) =>({
             margin: '0 auto',
             backgroundColor:"#5d1049"
           },
+          divider: {
+        
+            width:"100%",
+            margin: 4,
+          }
 }))
 
 
@@ -145,6 +150,7 @@ const WordList = () => {
                 </ListItemAvatar> */}
                 <ListItemText primary={primary} secondary={secondary} />
               </ListItem>
+              <Divider className={classes.divider} orientation="horizontal" />
             </React.Fragment>
           ))}
         </List>
