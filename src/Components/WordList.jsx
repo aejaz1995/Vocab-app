@@ -1,6 +1,7 @@
 import React from 'react'
 import { Paper, List, ListItem, ListItemText, makeStyles, Fab, Divider } from "@material-ui/core";
 import AddIcon from "@material-ui/icons/Add"
+import { AddWord } from './AddWord';
 
 const useStyles = makeStyles((theme) =>({
     paper: {
@@ -131,7 +132,16 @@ const messages = [
 const WordList = () => {
     
     const classes = useStyles()
+    const [open, setOpen] = React.useState(false);
 
+    const handleClickOpen = () => {
+      setOpen(true);
+    };
+  
+    const handleClose = () => {
+      setOpen(false);
+    };
+      
 
     return (
         <React.Fragment>
@@ -154,10 +164,11 @@ const WordList = () => {
             </React.Fragment>
           ))}
         </List>
-      <Fab  aria-label="add" className={classes.fabButton}>
+      <Fab  aria-label="add" className={classes.fabButton} onClick={handleClickOpen}>
             <AddIcon style={{color:"#fff"}}/>
           </Fab>
       </Paper>
+      <AddWord handleClose={handleClose} open={open} setOpen={setOpen}/>
         </React.Fragment>
     )
 }
