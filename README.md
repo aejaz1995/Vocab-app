@@ -4,14 +4,14 @@
 2) Install required dependencies with `npm install`.
 3) Run the server with `npm start`.
 
--------------- **Languages used** ------------------
-
-> The web-app has been bulit using ReactJS, Redux, NodeJS, ExpressJS, MongoDB
-
 
 ------------------- **INTRODUCTION** ---------------------- 
 
 This project is about building vocabulary and this act as repository words. 
+
+-------------- **Languages used** ------------------
+
+> The web-app has been bulit using ReactJS, Redux, NodeJS, ExpressJS, MongoDB
 
 
 ### [Click here to run Live demo](https://vocab-app-aejaz1995.vercel.app/)
