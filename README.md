@@ -5,7 +5,7 @@
 3) Run the server with `npm start`.
 ### [Click here to run Live demo](https://vocab-app-aejaz1995.vercel.app/)
 
-![Toggl Track](https://static01.nyt.com/vi-assets/images/share/1200x675_nameplate.png)
+![Toggl Track](https://i.imgur.com/fH8j32z.png)
 
 
 ------------------- **INTRODUCTION** ---------------------- 
